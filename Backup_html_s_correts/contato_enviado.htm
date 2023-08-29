@@ -1,0 +1,115 @@
+<%@LANGUAGE="VBSCRIPT"%>
+<% SESSION.LCID = 1046  %>
+<!--#include file="Connections/conexao.asp" -->
+<%
+Dim rs_notici
+Dim rs_notici_numRows
+
+Set rs_notici = Server.CreateObject("ADODB.Recordset")
+rs_notici.ActiveConnection = MM_conexao_STRING
+rs_notici.Source = "SELECT * FROM noticias ORDER BY data DESC"
+rs_notici.CursorType = 0
+rs_notici.CursorLocation = 2
+rs_notici.LockType = 1
+rs_notici.Open()
+
+rs_notici_numRows = 0
+%>
+<html>
+<link rel="SHORTCUT ICON" href="imagens/favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>BANDA VP2 - PISTA CHEIA, INTERATIVIDADE E MUITA ALEGRIA !!!</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(imagens/bg_menu_2inte.gif);
+	background-color: #000000;
+	background-repeat: repeat-x;
+}
+a:link {
+	color: #990000;
+}
+a:visited {
+	color: #990000;
+}
+a:hover {
+	color: #990000;
+}
+a:active {
+	color: #990000;
+}
+.style25 {
+	font-size: 12px;
+	font-family: verdana;
+}
+.style26 {font-size: 10px}
+.style27 {color: #FFFFFF}
+.style40 {	color: #E10000;
+	font-weight: bold;
+}
+-->
+</style>
+<script type="text/javascript">
+_uacct = "UA-371279-1";
+urchinTracker();
+</script>
+</head>
+
+<body>
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="778" height="170">
+      <param name="movie" value="flash/menu.swf">
+      <param name="quality" value="high">
+      <embed src="flash/menu.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="778" height="170"></embed>
+    </object></td>
+  </tr>
+  <tr>
+    <td height="413" align="center" bordercolor="#333333" background="imagens/fundo_px_barra_mold_pont.jpg" bgcolor="#FFFFFF"><div align="right">
+      <table width="801" height="433" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="500" rowspan="2" align="center" valign="top" bgcolor="#333333"><table width="478" height="439" border="0" bgcolor="#333333">
+            <tr>
+              <td align="center"><table width="482" height="404" border="0">
+                  <tr>
+                    <td align="center" valign="top" bgcolor="#999999"><table width="310" height="313" border="0">
+                      <tr>
+                        <td><DIV align="center">
+                            <p><font color="#FFFFFF">Mensagem enviada com   sucesso...</font></p>
+                          <p><a href="principal.html">voltar</a></p>
+                        </DIV></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+          <p></p></td>
+          <td width="301" bgcolor="#333333">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#333333"><img src="imagens/contat_led.jpg" width="300" height="442"></td>
+        </tr>
+      </table>
+    </div></td>
+  </tr>
+  
+  
+  <tr>
+    <td align="center" bgcolor="#000000"><p><font color="#FFFFFF" size="2" face="arial">Banda </font><font size="2" face="arial"><span class="style40">VP2</span></font><font color="#FFFFFF" size="2" face="arial"> - copyright 2009 - Todos os direitos reservados</font><br>
+    </p>
+    </td>
+  </tr>
+</table>
+
+
+</body>
+</html>
+<%
+rs_notici.Close()
+Set rs_notici = Nothing
+%>

@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><%@LANGUAGE="VBSCRIPT"%><% SESSION.LCID = 1046 %><!--#include file="file:///D|/w/Trabalhos_Design/Banda_VP2/Banda VP2 - 2009/Web/Connections/conexao.asp" --><%
+Dim rs_notici
+Dim rs_notici_numRows
+
+Set rs_notici = Server.CreateObject("ADODB.Recordset")
+rs_notici.ActiveConnection = MM_conexao_STRING
+rs_notici.Source = "SELECT * FROM noticias ORDER BY data DESC"
+rs_notici.CursorType = 0
+rs_notici.CursorLocation = 2
+rs_notici.LockType = 1
+rs_notici.Open()
+
+rs_notici_numRows = 0
+%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<HEAD><TITLE>BAYER - ACESS&Oacute;RIOS P/ VIDROS TEMPERADOS</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+BODY {
+	BACKGROUND-IMAGE: url(img/body_bg.jpg); MARGIN: 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #FFFFFF}
+A:link {
+	COLOR: #333333}
+A:visited {
+	COLOR: #333333}
+A:hover {
+	COLOR: #FF6600}
+A:active {
+	COLOR: #333333}
+.style29 {
+	font-family: ARIAL;
+	font-weight: bold;
+	color: #333333;
+	font-size: 14px;
+}
+.style39 {font-family: verdana; color: #FFFFFF; font-size: 11px; }
+.style35 {font-family: verdana; color: #990000; font-size: 10px; }
+.style40 {color: #000000}
+.style41 {color: #666666}
+.style42 {color: #333333}
+.style45 {font-family: verdana; color: #333333; font-size: 14px; }
+.style46 {
+	color: #FF3300;
+	font-weight: bold;
+	font-size: 14px;
+}
+.style53 {font-size: 14px}
+.style58 {color: #333333; font-weight: bold; }
+.style60 {color: #FF3300; font-size: 13px; font-family: ARIAL;}
+</STYLE>
+<SCRIPT type=text/javascript>
+_uacct = "UA-371279-1";
+urchinTracker();
+</SCRIPT>
+
+<META content="MSHTML 6.00.6000.17037" name=GENERATOR></HEAD>
+<BODY>
+<form method="post" action="mail.php">
+<TABLE cellSpacing=0 cellPadding=0 width=770 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="865" height="251">
+      <param name="movie" value="Flash/menu_bayer.swf">
+      <param name="quality" value="high">
+      <embed src="Flash/menu_bayer.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="865" height="251"></embed>
+    </object></TD>
+  </TR>
+  <TR>
+    <TD height=413 align=left valign="top" borderColor=#333333 
+    background=img/body_bg_home.jpg 
+    bgColor=#ffffff><p>&nbsp;</p>
+      <table width="836" height="380" border="0">
+        <tr>
+          <td width="635" height="376" align="center" valign="top"><table width="576" height="520" border="0">
+            <tr>
+              <td width="566" height="56" align="left" valign="top"> <img src="img/home_produtos/contato_topic.jpg" width="166" height="18" /></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top"><table height="402" width="482" border="0">
+                <tbody>
+                  <tr>
+                    <td valign="top" align="left" bgcolor="#FFFFFF" height="398"><table height="466" cellspacing="0" cellpadding="0" width="435">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="left" width="99%" bgcolor="#FFFFFF" height="82"><span class="style45">Este espa&ccedil;o &eacute; para voc&ecirc; falar com a <strong> BAYER</strong>.<br />
+                                <br />
+                            </span><span class="style45">Preencha o formul&aacute;rio abaixo, n&atilde;o esque&ccedil;a de informar seu telefone ou e-mail para que possamos entrar em contato.</span></td>
+                          </tr>
+                          <tr>
+                            <td valign="top" align="center" bgcolor="#FFFFFF"><table bordercolor="#999999" width="431" align="center" border="1">
+                              <tbody>
+                                <tr>
+                                  <td width="347"><div align="left" class="style39 style42"><strong>Nome:</strong></div></td>
+                                  <td width="347"><div align="left" class="style58"><font face="Arial, Helvetica, sans-serif">
+                                      <input style="font-size: 7pt; font-family: Verdana" size="40" name="Nome" />
+                                  </font></div></td>
+                                </tr>
+                                  <tr>
+                                  <td width="347"><div align="left" class="style39 style42"><strong>Empresa:</strong></div></td>
+                                  <td width="347"><div align="left" class="style58"><font face="Arial, Helvetica, sans-serif">
+                                      <input style="font-size: 7pt; font-family: Verdana" size="40" name="Empresa" />
+                                  </font></div></td>
+                                </tr>
+                                <tr>
+                                  <td width="347" height="29"><div align="left" class="style39 style42"><strong>Email:</strong></div></td>
+                                  <td width="347"><div align="left" class="style58"><font face="Arial, Helvetica, sans-serif">
+                                      <input style="font-size: 7pt; font-family: Verdana" size="40" name="Email" />
+                                  </font></div></td>
+                                </tr>
+                                  <tr>
+                                  <td width="347"><div align="left" class="style39 style42"><strong>Telefone</strong></div></td>
+                                  <td width="347"><div align="left" class="style58"><font face="Arial, Helvetica, sans-serif">
+                                      <input style="font-size: 7pt; font-family: Verdana" size="40" name="Telefone" />
+                                  </font></div></td>
+                                </tr>
+                                <tr>
+                                  <td width="347"><div align="left" class="style39 style42"><strong>Motivo do contato</strong></div></td>
+                                  <td width="347"><div align="left" class="style58"><font face="Arial, Helvetica, sans-serif">
+                                      <select style="font-size: 7pt; font-family: Verdana" name="Motivo">
+                                        <option selected="selected">Escolha</option>
+                                        <option>Orçamento</option>
+                                        <option>Dúvidas</option>
+                                        <option>Sugestões</option>
+                                        <option>Reclamações</option>
+                                        <option>Outros</option>
+                                      </select>
+                                  </font></div></td>
+                                </tr>
+                                <tr>
+                                  <td width="347"><div align="left" class="style60">Deixe aqui sua mensagem ou pedido de or&ccedil;amento.</div></td>
+                                  <td width="347"><div align="left" class="style58"><font face="Arial, Helvetica, sans-serif">
+                                      <textarea style="font-size: 7pt; font-family: Verdana" name="Mensagem" rows="3" cols="40"></textarea>
+                                  </font></div></td>
+                                </tr>
+                                <tr>
+                                  <td width="347">&nbsp;</td>
+                                  <td width="347"><strong><font face="Arial, Helvetica, sans-serif">
+                                    <input style="font-weight: bold; font-size: 8pt; color: #333333; font-family: Verdana" type="submit" value="Enviar" name="submit" />
+                                    <input style="font-weight: bold; font-size: 8pt; color: #333333; font-family: Verdana" type="reset" value="Limpar" name="reset" />
+                                  </font></strong></td>
+                                </tr>
+                              </tbody>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td valign="top" colspan="2" height="19"><br />                            </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" colspan="2" height="62"><table bordercolor="#999999" cellspacing="2" width="431" align="center" border="1">
+                                <tbody>
+                                  <tr>
+                                    <td class="style35" bordercolor="#999999" width="355"><p align="left" class="style46">contato@acessoriosbayer.com.br</p></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top" bordercolor="#999999" bgcolor="#F0F0F0" class="style35"><p align="left" class="style40"><br>
+                                      <span class="style41"><span class="style42"><span class="style53"><strong>TEL:</strong> <strong>11-2406 4762  / *NEXTEL: 11-7749 5205 </strong></span><br />
+                                            <br />
+                                            <strong><font size="2">ATENDIMENTO: 07 &agrave;s 17hs</font></strong></span></span></p>
+                                      <p align="left" class="style40"><span class="style41"><span class="style42"><strong><font size="2"><br>
+                                      </font></strong></span></span></p></td>
+                                  </tr>
+                                </tbody>
+                            </table></td>
+                          </tr>
+                        </tbody>
+                    </table></td>
+                  </tr>
+                </tbody>
+              </table>                
+                <p><br>
+              </p>                </td>
+            </tr>
+            <tr>
+              <td height="21" valign="top">&nbsp;</td>
+            </tr>
+            
+            
+          </table></td>
+          <td width="191" align="center" valign="top"><p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <table width="200" border="0">
+              <tr>
+                <td width="12" height="43"><img src="img/home_produtos/set.jpg" width="9" height="12" /></td>
+                <td width="163" align="left"><a href="kitsfechados.html" class="style29 style44">KITS FECHADOS </a></td>
+              </tr>
+              <tr>
+                <td height="40"><img src="img/home_produtos/set.jpg" width="9" height="12" /></td>
+                <td align="left" class="style29"><a href="acess_avuls.html">ACESS&Oacute;RIOS AVULSOS</a></td>
+              </tr>
+              <tr>
+                <td height="39"><img src="img/home_produtos/set.jpg" width="9" height="12" /></td>
+                <td align="left"><a href="roldanas_carrinhos.html" class="style29">ROLDANAS E CARRINHOS</a></td>
+              </tr>
+              <tr>
+                <td height="35"><img src="img/home_produtos/set.jpg" width="9" height="12" /></td>
+                <td align="left"><a href="puxadores.html" class="style29">PUXADORES</a></td>
+              </tr>
+              <tr>
+                <td height="37"><img src="img/home_produtos/set.jpg" width="9" height="12" /></td>
+                <td align="left"><a href="rold_sacada.html" class="style29">KIT ROLD. P/ SACADA </a></td>
+              </tr>
+              <tr>
+                <td height="34"><img src="img/home_produtos/set.jpg" width="9" height="12" /></td>
+                <td align="left"><a href="roldana_pia_vitrine.html" class="style29">ROLD. P/ PIA E VITRINE </a></td>
+              </tr>
+              <tr>
+                <td height="21">&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="21">&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      </TD>
+  </TR>
+  <TR>
+    <TD align=center valign="top"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="865" height="70">
+      <param name="movie" value="Flash/rodape_bayer.swf">
+      <param name="quality" value="high">
+      <embed src="Flash/rodape_bayer.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="865" height="70"></embed>
+    </object></TD>
+  </TR></TBODY></TABLE>
+<SCRIPT 
+src="BAYERPLASTIC%20roldanas%20para%20box%20e%20acessórios_arquivos/urchin.js" 
+type=text/javascript>
+</SCRIPT>
+
+<SCRIPT 
+type=text/javascript>
+_uacct = "UA-4264913-1";
+urchinTracker();
+</SCRIPT>
+<%
+rs_notici.Close()
+Set rs_notici = Nothing
+%></BODY></HTML>
